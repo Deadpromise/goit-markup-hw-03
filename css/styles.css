@@ -59,18 +59,21 @@ img {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 1px solid purple;
+	/* outline: 1px solid purple; */
 }
 .section {
 	padding-top: 94px;
-	outline: 1px solid yellowgreen;
+	padding-bottom: 94px;
+	/* outline: 1px solid yellowgreen; */
 }
 /* header */
+.head-sect {
+	border-bottom: 1px solid #ECECEC;
+}
 .head-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid ;
 
 }
 /* Logo */
@@ -90,14 +93,14 @@ img {
 	display: flex;
 	align-items: center;
 
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 .nav-list {
 	display: flex;
 	align-items: center;
 	margin-left: 90px;
 
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .nav-item {
@@ -117,7 +120,7 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--header-color);
 
-	outline: 1px solid greenyellow;
+	/* outline: 1px solid greenyellow; */
 }
 
 
@@ -178,9 +181,12 @@ img {
 	background-color: var(--active-button);
 }
 /* Qualities */
+.section-qual {
+	padding-top: 94px;
+}
 .qualities {
 	padding-top: 94px;
-	outline: 1px solid greenyellow;
+	/* outline: 1px solid greenyellow; */
 }
 .quality-header {
 	margin-bottom: 10px;
@@ -200,7 +206,7 @@ display: flex;
 .qualities-item {
 	flex-basis: calc((100%-90px) / 4);
 	margin-left: 30px;
-	outline: 1px solid teal;
+	/* outline: 1px solid teal; */
 }
 .qualities-item:first-child {
 	margin-left: 0;
@@ -217,7 +223,7 @@ display: flex;
 }
 .works-list {
 	display: flex;
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 	margin-left: -30px;
 }
 .work-item {
@@ -227,30 +233,27 @@ display: flex;
 
 
 /* Our team */
-.team-sect {
-	padding-bottom: 94px;
-}
 .team-list {
 	display: flex;
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 }
-.team-list > team-item {
+.team-item {
 	flex-basis: calc((100% - 90px) / 4);
 	margin-left: 30px;
-	outline: 1px dashed yellowgreen;
+	/* outline: 1px dashed yellowgreen; */
 }
 .team-item:first-child {
 	margin-left: 0;
 }
 
 .team-descr {
-	padding: 30px 70px;
+	padding: 30px 0;
 }
 
 
 
 .names {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
@@ -267,7 +270,13 @@ display: flex;
 .footer {
 	background-color: var(--secondary-background-color);
 }
+
+.foot-nav {
+	padding: 60px 0;
+}
 .logo-bot {
+	display: block;
+	margin-bottom: 20px;
 	color: var(--secondary-color);
 }
 .address {
@@ -288,6 +297,11 @@ display: flex;
 .foot-link:focus {
 	color: var(--accent-color);
 }
+
+.foot-item + .foot-item {
+	margin-top: 9px;
+}
+
 /* Portfolio */
 /* Filter */
 /* buttons */

@@ -25,6 +25,9 @@ h1, h2, h3, h5, h5, h6 {
 button {
 	padding: 0;
 }
+.list p {
+	margin: 0;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -54,6 +57,9 @@ button {
 	margin-left: auto;
 	margin-right: auto;
 	outline: 1px solid red;
+}
+.section {
+	padding-top: 94px;
 }
 /* header */
 .head-nav {
@@ -167,14 +173,34 @@ button {
 	background-color: var(--active-button);
 }
 /* Qualities */
+.qualities {
+	padding-top: 94px;
+	outline: 1px solid greenyellow;
+}
 .quality-header {
+	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
 	color: var(--header-color);
+
 }
+.qualities-list {
+display: flex;
+
+}
+
+.qualities-item {
+	flex-basis: calc((100%-90px) / 4);
+	margin-left: 30px;
+	outline: 1px solid teal;
+}
+.qualities-item:first-child {
+	margin-left: 0;
+}
+
 /* What we do */
 .main-header {
 	font-size: 36px;

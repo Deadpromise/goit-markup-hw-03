@@ -25,6 +25,10 @@ h1, h2, h3, h5, h5, h6 {
 button {
 	padding: 0;
 }
+img {
+	display: block;
+	max-width: 100%;
+}
 .list p {
 	margin: 0;
 }
@@ -50,19 +54,20 @@ button {
 	text-decoration: none;
 }
 .container {
-	display: flex;
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 1px solid red;
+	outline: 1px solid purple;
 }
 .section {
 	padding-top: 94px;
+	outline: 1px solid yellowgreen;
 }
 /* header */
 .head-nav {
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid ;
@@ -203,12 +208,24 @@ display: flex;
 
 /* What we do */
 .main-header {
+	margin-bottom: 50px;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
 
 	color: var(--header-color);
 }
+.works-list {
+	display: flex;
+	outline: 1px dashed red;
+	margin-left: -30px;
+}
+.work-item {
+	flex-basis: calc((100% / 3) -30px);
+	margin-left: 30px;
+}
+
+
 /* Our team */
 .names {
 	font-weight: 500;

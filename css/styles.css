@@ -227,7 +227,30 @@ display: flex;
 
 
 /* Our team */
+.team-sect {
+	padding-bottom: 94px;
+}
+.team-list {
+	display: flex;
+	outline: 1px dashed red;
+}
+.team-list > team-item {
+	flex-basis: calc((100% - 90px) / 4);
+	margin-left: 30px;
+	outline: 1px dashed yellowgreen;
+}
+.team-item:first-child {
+	margin-left: 0;
+}
+
+.team-descr {
+	padding: 30px 70px;
+}
+
+
+
 .names {
+	padding-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;

@@ -9,6 +9,7 @@
 	--secondary-background-color: #2f303a;
 	--footer-links: rgba(255, 255, 255, 0.6);
 	--filter-bg: #f5f4fa;
+	--card-set-gap: 30px;
 }
 /* global rules */
 body {
@@ -156,13 +157,13 @@ img {
 	color: var(--secondary-color);
 }
 .basic-button {
+	border: 0px;
 	display: inline-block;
 	cursor: pointer;
 }
 
 .hero-button {
 	min-width: 216px;
-	border: 0px solid var(--accent-color);
 	border-radius: 4px;
 	padding: 10px;
 
@@ -306,6 +307,12 @@ display: flex;
 /* Filter */
 /* buttons */
 .filter-button {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border-radius: 4px;
+
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -315,14 +322,20 @@ display: flex;
 
 	color: var(--header-color);
 	background-color: var(--filter-bg);
+
+	/* outline: 1px solid yellowgreen; */
 }
 .filter-button:hover,
 .filter-button:focus {
 	color: var(--secondary-color);
 	background-color: var(--accent-color);
 }
+.filter-item:not(:first-child) {
+	margin-left: 8px;
+}
 /* cards */
 .cards-header {
+	margin-bottom: 4px;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
@@ -336,4 +349,29 @@ display: flex;
 .cards-text {
 	font-size: 16px;
 	line-height: 1.88;
+}
+
+.filter-list {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 16px;
+	margin-bottom: 34px;
+	/* outline: 1px dashed red; */
+}
+.cards-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc(-1 * var(--card-set-gap));
+	margin-top: calc(-1 * var(--card-set-gap));
+	/* outline: 1px solid blue; */
+}
+
+.cards-item {
+	flex-basis: calc((100% / 3) - var(--card-set-gap));
+	margin-left: var(--card-set-gap);
+	margin-top: var(--card-set-gap);
+	/* outline: 1px solid red; */
+}
+.card-text {
+	padding: 20px 24px;
 }

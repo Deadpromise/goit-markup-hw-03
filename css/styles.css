@@ -347,6 +347,7 @@ display: flex;
 	line-height: 1.88;
 }
 .cards-text {
+	
 	font-size: 16px;
 	line-height: 1.88;
 }
@@ -373,5 +374,7 @@ display: flex;
 	/* outline: 1px solid red; */
 }
 .card-text {
+	border: 1px solid #EEEEEE;
+	border-top: none;
 	padding: 20px 24px;
 }

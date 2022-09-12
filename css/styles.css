@@ -234,6 +234,10 @@ display: flex;
 
 
 /* Our team */
+.team-section {
+	background-color: var(--filter-bg);
+}
+
 .team-list {
 	display: flex;
 	/* outline: 1px dashed red; */
@@ -249,6 +253,7 @@ display: flex;
 
 .team-descr {
 	padding: 30px 0;
+	background-color:var(--main-background-color);
 }
 
 
@@ -269,12 +274,10 @@ display: flex;
 }
 /* Footer */
 .footer {
+	padding: 60px 0;
 	background-color: var(--secondary-background-color);
 }
 
-.foot-nav {
-	padding: 60px 0;
-}
 .logo-bot {
 	display: block;
 	margin-bottom: 20px;
